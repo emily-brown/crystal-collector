@@ -11,11 +11,16 @@ $("#randomButton").on("click", function(){
     $("#randomNumber").text(random);
 });
 
-// Create random number generator for the 4 different buttons so that when the player clicks on, each will generate a random value to be added to the PlayerNumber and guess the Computer Number
+// Create button hidden value randomization
+let button1 = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+let button2 = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+let button3 = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+let button4 = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+
+// Create click function for each of the buttons so that when the button is clicked, each will hold a different hidden random value and that random value gets added to the "Your Number" tally
 
 $("#button1").on("click", function(){
-    let button1val = Math.floor(Math.random() * 12) + 1;
-        playerNumber = playerNumber + button1val;
+        playerNumber = playerNumber + button1;
         $("#playerNumber").text(playerNumber);
         if (playerNumber === random) {
             winning();
@@ -26,20 +31,17 @@ $("#button1").on("click", function(){
 });
 
 $("#button2").on("click", function(){
-    let button2val = Math.floor(Math.random() * 12) + 1;
-        playerNumber = playerNumber + button2val;
+        playerNumber = playerNumber + button2;
             $("#playerNumber").text(playerNumber)
 });
 
 $("#button3").on("click", function(){
-    let button3val = Math.floor(Math.random() * 12) + 1;
-        playerNumber = playerNumber + button3val;
+        playerNumber = playerNumber + button3;
             $("#playerNumber").text(playerNumber)
 });
 
 $("#button4").on("click", function(){
-    let button4val = Math.floor(Math.random() * 12) + 1;
-        playerNumber = playerNumber + button4val;
+        playerNumber = playerNumber + button4;
             $("#playerNumber").text(playerNumber)
 });
 
