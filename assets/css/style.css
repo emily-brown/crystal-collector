@@ -7,6 +7,22 @@
     border-image-repeat: no-repeat;
 }
 
+#randomButton {
+    height: 50px;
+    width: 150px;
+    background: none;
+    border-radius: 50%;
+    border-color: white;
+    font-family: 'Bungee Shade', cursive;
+    color: white;
+    font-size: 20px;
+}
+
+#randomButton:hover {
+    background-color: #5d1267;
+    opacity: 0.5;
+}
+
 #goal {
     font-family: 'Bungee Shade', cursive;
     color: white;
@@ -16,10 +32,21 @@
 .circle {
     height: 70px;
     width: 70px;
-    background-color: #dc4ea5;
+    background-image: url("../images/galaxy.jpg");
+    background-size: cover;
     border-radius: 50%;
+    color: white;
 }
 
+.circle:hover {
+    background-color: #5d1267;
+}
+
+#scoreboard {
+    font-family: 'Bungee Shade', cursive;
+    color: white;
+    width: 50%;
+}
 
 /* Popout Styling  */
 /* The Modal (background) */
@@ -60,3 +87,19 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+#myBtn {
+    height: 70px;
+    width: 70px;
+    background-color: #5d1267;
+    border-radius: 50%; 
+    opacity: 0.5;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+}
+
+#myBtn:hover {
+    background-color: #4f91bd;
+}
