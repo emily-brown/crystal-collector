@@ -8,8 +8,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<body class="d-flex flex-column" id="background">
 
     <nav class="navbar fixed-top">
         <a class="navbar-brand" href="https://emily-brown.github.io/bootstrap-portfolio/portfolio.html">&#8592; Back to Portfolio</a>
@@ -24,42 +26,70 @@
         </div>
     </div>
 
-    <!-- Main Game Container -->
+    <!-- Random button Container -->
 
     <div class="container-fluid">
-        <div class="container">
+        <div class="container d-flex justify-content-center">
             <div class="row">
                 <div class="col-sm-12">
                     <button id="randomButton">Random</button>
                 </div>
             </div>
-            <div class="row">
+        </div>
+
+    <!-- Main game content container -->
+
+        <div class="container">
+            <div class="row" id="goal">
                 <div class="col-sm-6">
-                    <h2>Computer Number</h2>
-                    <span id="computerNumber"></span>
+                    <h2 class="text-center">Computer Number</h2>
+                    <h3 class="text-center">
+                        <span id="computerNumber"></span>
+                    </h3>
                 </div>
                 <div class="col-sm-6">
-                    <h2>Your Number</h2>
-                    <span id="playerNumber"></span>
+                    <h2 class="text-center">Your Number</h2>
+                    <h3 class="text-center">
+                        <span id="playerNumber"></span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container justify-content-center">
+            <div class="row">
+                <div class="col-sm-12">
+                    <br>
+                    <br>
+                    <br>
                 </div>
             </div>
         </div>
     
     <!-- Buttons for Player to Choose From -->
 
-        <div class="container">
+        <div class="container d-flex justify-content-center">
             <div class="row">
                 <div class="col-sm-3">
-                    <button id="button1"></button>
+                    <button id="button1" class="circle"></button>
                 </div>
                 <div class="col-sm-3">
-                    <button id="button2"></button>
+                    <button id="button2" class="circle"></button>
                 </div>
                 <div class="col-sm-3">
-                    <button id="button3"></button>
+                    <button id="button3" class="circle"></button>
                 </div>
                 <div class="col-sm-3">
-                    <button id="button4"></button>
+                    <button id="button4" class="circle"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-sm-12">
+                    <br>
+                    <br>
+                    <br>
                 </div>
             </div>
         </div>
@@ -69,17 +99,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1>Scoreboard</h1>
+                    <h1 class="text-center">Scoreboard</h1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row d-flex justify-content-center">
                 <div class="col-sm-6">
-                    <h2>Wins</h2>
-                    <span id="winsTracker"></span>
+                    <h2 class="text-center">Wins</h2>
+                    <h3 class="text-center">
+                        <span id="winsTracker"></span>
+                    </h3>
                 </div>
                 <div class="col-sm-6">
-                    <h2>Losses</h2>
-                    <span id=lossesTracker></span>
+                    <h2 class="text-center">Losses</h2>
+                    <h3 class="text-center">
+                        <span id=lossesTracker></span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+            <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Open Modal</button>
+            <!-- The Modal -->
+                <div id="myModal" class="modal">
+            <!-- Modal content -->
+                    <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -88,5 +137,6 @@
 
 
 <script src="assets/javascript/game.js"></script>
+<script src="assets/javascript/button.js"></script>
 </body>
 </html>
