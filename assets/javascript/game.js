@@ -40,20 +40,17 @@ function losing() {
     reset();
     }
 
-// Create click function for each of the buttons so that when the button is clicked, each will hold a different hidden random value and that random value gets added to the "Your Number" tally
+// Create click function for each of the buttons so that when the button is clicked, each will hold a different hidden random value and that random value gets added to the "Your Number" tally after a comparison of the computer number against your number is complete 
 
 $("#button1").on("click", function(){
         playerNumber = playerNumber + button1;
         let compNumber = $('#computerNumber').text()
         $("#playerNumber").text(playerNumber);
         console.log(playerNumber, parseInt(compNumber))
+        // Compare player number against computer number to determine win or lose
         if (playerNumber === parseInt(compNumber)) {
             winning();
             console.log("win!")
-            // reset();
-        //     resetPlayerNumber();
-        //     resetRandomButton();
-        //     resetButtons();
         } else if (playerNumber > parseInt(compNumber)) {
             losing();
             console.log("lose!")
@@ -65,6 +62,7 @@ $("#button2").on("click", function(){
     let compNumber = $('#computerNumber').text()
     $("#playerNumber").text(playerNumber);
     console.log(playerNumber, parseInt(compNumber))
+    // Compare player number against computer number to determine win or lose
     if (playerNumber === parseInt(compNumber)) {
         winning();
         console.log("win!")
@@ -79,6 +77,7 @@ $("#button3").on("click", function(){
     let compNumber = $('#computerNumber').text()
     $("#playerNumber").text(playerNumber);
     console.log(playerNumber, parseInt(compNumber))
+    // Compare player number against computer number to determine win or lose 
     if (playerNumber === parseInt(compNumber)) {
         winning();
         console.log("win!")
@@ -93,6 +92,7 @@ $("#button4").on("click", function(){
     let compNumber = $('#computerNumber').text()
     $("#playerNumber").text(playerNumber);
     console.log(playerNumber, parseInt(compNumber))
+    // Compare player number against computer number to determine win or lose
     if (playerNumber === parseInt(compNumber)) {
         winning();
         console.log("win!")
@@ -101,6 +101,8 @@ $("#button4").on("click", function(){
         console.log("lose!")
     }
 });
+
+// Create reset 
 
 function reset() {
     playerNumber = 0;
