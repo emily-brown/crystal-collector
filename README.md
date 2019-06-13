@@ -26,9 +26,10 @@ Need a refresher on game instructions? Hit the "?" button in the bottom right co
 ##### Main Game Container
 ```
 Functionality:
-  - Begin initial game hitting the "Random" button at the top of the screen to select Computer Number. This number will display under "Computer Number"
+  - Begin initial game hitting the "Start!" button at the top of the screen to select Computer Number. This number will display under "Computer Number"
   - Player number will display under "Player Number"
 ```
+<img width="976" src="assets/images/MainGame.png">
 
 ##### Random Hidden Value Buttons 
 ```
@@ -36,12 +37,15 @@ Functionality:
   - The player will use the four (4) buttons to try and get their number to match the computer number. 
   - At the start of each game, these 4 buttons will have a new set of hidden values. It's up to the player to figure out what those values are each round in order to match the computer number.
 ```
+<img width="976" src="assets/images/HiddenValue.png">
+
 ##### Scoreboard Container 
 ```
 Functionality:
   - If the player gets their number to match the computer's number, they win a point and the point is captured in the "Wins" section of the scoreboard.
   - If the player's number exceeds the computer's number, the lose a point and the point is captures in the "Losses" section of the scoreboard. 
 ```
+<img width="976" src="assets/images/Scoreboard.png">
 
 ##### Either Win or Lose - Reset
 ```
@@ -54,5 +58,5 @@ Functionality:
 Functionality:
   - If the player needs a reminder of the game instructions, they can click the "?" button in the right hand corner of the game.
   - Once clicked, game instructions will appear.
-
-
+```
+<img width="976" src="Instructions.png">

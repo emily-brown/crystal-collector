@@ -3,7 +3,6 @@ $(document).ready(function() {
 // Create random number generator to pick rnadom number anywhere from 19 - 120
 
 $("#randomButton").on("click", function(){
-    console.log("clicked")
     let computerNumber = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
     $("#computerNumber").text(computerNumber);
 });
@@ -22,7 +21,7 @@ $("#winsTracker").text(winsTracker);
 let lossesTracker = 0;
 $("#lossesTracker").text(lossesTracker)
 
-// Set "Your Number" to 0 to begin game with
+// Set "Player Number" to 0 to begin game with
 let playerNumber = 0;
 $("#playerNumber").text(playerNumber); 
 
@@ -46,11 +45,9 @@ $("#button1").on("click", function(){
         playerNumber = playerNumber + button1;
         let compNumber = $('#computerNumber').text()
         $("#playerNumber").text(playerNumber);
-        console.log(playerNumber, parseInt(compNumber))
         // Compare player number against computer number to determine win or lose
         if (playerNumber === parseInt(compNumber)) {
             winning();
-            console.log("win!")
         } else if (playerNumber > parseInt(compNumber)) {
             losing();
             console.log("lose!")
@@ -61,14 +58,11 @@ $("#button2").on("click", function(){
     playerNumber = playerNumber + button2;
     let compNumber = $('#computerNumber').text()
     $("#playerNumber").text(playerNumber);
-    console.log(playerNumber, parseInt(compNumber))
     // Compare player number against computer number to determine win or lose
     if (playerNumber === parseInt(compNumber)) {
         winning();
-        console.log("win!")
     } else if (playerNumber > parseInt(compNumber)) {
         losing();
-        console.log("lose!")
     }
 });
 
@@ -76,14 +70,11 @@ $("#button3").on("click", function(){
     playerNumber = playerNumber + button3;
     let compNumber = $('#computerNumber').text()
     $("#playerNumber").text(playerNumber);
-    console.log(playerNumber, parseInt(compNumber))
     // Compare player number against computer number to determine win or lose 
     if (playerNumber === parseInt(compNumber)) {
         winning();
-        console.log("win!")
     } else if (playerNumber > parseInt(compNumber)) {
         losing();
-        console.log("lose!")
     }
 });
 
@@ -91,14 +82,11 @@ $("#button4").on("click", function(){
     playerNumber = playerNumber + button4;
     let compNumber = $('#computerNumber').text()
     $("#playerNumber").text(playerNumber);
-    console.log(playerNumber, parseInt(compNumber))
     // Compare player number against computer number to determine win or lose
     if (playerNumber === parseInt(compNumber)) {
         winning();
-        console.log("win!")
     } else if (playerNumber > parseInt(compNumber)) {
         losing();
-        console.log("lose!")
     }
 });
 
