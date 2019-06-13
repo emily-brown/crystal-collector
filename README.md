@@ -7,7 +7,7 @@ Using the buttons that hold hidden value, score points to tie with the Computer'
 
 ### Game Instructions:
 1. Begin game by pressing the "Start!" button. The number will display under Computer's Number. 
-2. Using the four (4) buttons, click away until your number, which is displayed under "Player Number" matches the Computer's Number. The catch is though that the values of each button are hidden and the value of each button changes every round. 
+2. Using the four (4) buttons, click away until your number, which is displayed under "Player Number" matches the Computer's Number. The catch is though that the values of each button have a hidden value between 1-12 and the value of each button changes every round. 
 3. If you match the computer's number, you gain a point and the game resets with a new computer number and new hidden value buttons. If you go over, you lose a point and the game resets.
 #### Tips
 Need a refresher on game instructions? Hit the "?" button in the bottom right corner of the game screen.
@@ -35,7 +35,7 @@ Functionality:
 ```
 Functionality:
   - The player will use the four (4) buttons to try and get their number to match the computer number. 
-  - At the start of each game, these 4 buttons will have a new set of hidden values. It's up to the player to figure out what those values are each round in order to match the computer number.
+  - At the start of each game, these 4 buttons will have a new set of hidden values between 1-12. It's up to the player to figure out what those values are each round in order to match the computer number.
 ```
 <img width="976" src="assets/images/HiddenValue.png">
 
