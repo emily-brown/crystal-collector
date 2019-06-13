@@ -59,4 +59,4 @@ Functionality:
   - If the player needs a reminder of the game instructions, they can click the "?" button in the right hand corner of the game.
   - Once clicked, game instructions will appear.
 ```
-<img width="976" src="Instructions.png">
+<img width="976" src="assets/images/Instructions.png">
