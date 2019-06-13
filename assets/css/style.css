@@ -7,6 +7,15 @@
     border-image-repeat: no-repeat;
 }
 
+a {
+    font-family: 'Bungee Shade', cursive;
+    color: #4f91bd;
+}
+
+a:hover {
+    color: white;
+}
+
 #randomButton {
     height: 50px;
     width: 150px;
